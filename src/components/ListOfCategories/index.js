@@ -1,6 +1,6 @@
 import React, { useEffect, Fragment, useState } from 'react'
 import { Category } from '../Category'
-// import { MyLoader } from '../loader/index'
+
 import { List, Item } from './styles'
 
 function useCategoriesData () {
