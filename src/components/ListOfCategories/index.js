@@ -1,6 +1,6 @@
 import React, { useEffect, Fragment, useState } from 'react'
 import { Category } from '../Category'
-
+import { MyLoader } from '../loader/index'
 import { List, Item } from './styles'
 
 function useCategoriesData () {
@@ -37,15 +37,14 @@ export const ListOfCategories = () => {
   const renderList = (fixed) => (
     <List fixed={fixed}>
       {
-        loading
-          ? <Item key='loading'><Category /></Item>
-          : categories.map(category => <Item> <Category {...category} /></Item>)
+
+        categories.map(category => <Item> <Category {...category} /></Item>)
       }
     </List>
   )
-  // if (loading) {
-  //   return 'Cargando...'
-  // }
+  if (loading) {
+    return <MyLoader />
+  }
   return (
     <Fragment>
       {renderList()}
