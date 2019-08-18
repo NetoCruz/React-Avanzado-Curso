@@ -36,8 +36,13 @@
         "webpack-html-plugin": "^0.1.1"
     },
     "dependencies": {
+        "apollo": "^2.17.4",
+        "apollo-boost": "^0.4.4",
+        "boost": "^0.63.1",
+        "graphql": "^14.4.2",
         "intersection-observer": "^0.7.0",
         "react": "^16.9.0",
+        "react-apollo": "^3.0.1",
         "react-content-loader": "^4.2.2",
         "react-dom": "^16.9.0",
         "react-icons": "^3.7.0",
@@ -49,7 +54,7 @@
         ]
     },
     "eslintConfig": {
-        "parser":"babel-eslint",
+        "parser": "babel-eslint",
         "extends": [
             "./node_modules/standard/eslintrc.json"
         ]
