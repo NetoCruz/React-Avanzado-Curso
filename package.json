@@ -7,7 +7,7 @@
         "now-build": "npm run build",
         "build": "webpack",
         "lint": "standard",
-        "dev": "webpack-dev-server",
+        "dev": "webpack-dev-server --history-api-fallback",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
@@ -36,6 +36,7 @@
         "webpack-html-plugin": "^0.1.1"
     },
     "dependencies": {
+        "@reach/router": "^1.2.1",
         "apollo": "^2.17.4",
         "apollo-boost": "^0.4.4",
         "boost": "^0.63.1",
