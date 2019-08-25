@@ -8,6 +8,7 @@
         "build": "webpack",
         "lint": "standard",
         "dev": "webpack-dev-server --history-api-fallback",
+        "serve:dev": "webpack --mode 'development' && npx serve dist -s",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
@@ -33,7 +34,9 @@
         "webpack": "^4.39.2",
         "webpack-cli": "^3.3.6",
         "webpack-dev-server": "^3.8.0",
-        "webpack-html-plugin": "^0.1.1"
+        "webpack-html-plugin": "^0.1.1",
+        "webpack-pwa-manifest": "^4.0.0",
+        "workbox-webpack-plugin": "^4.3.1"
     },
     "dependencies": {
         "@reach/router": "^1.2.1",
@@ -42,6 +45,7 @@
         "boost": "^0.63.1",
         "graphql": "^14.4.2",
         "intersection-observer": "^0.7.0",
+        "prop-types": "^15.7.2",
         "react": "^16.9.0",
         "react-apollo": "^3.0.1",
         "react-content-loader": "^4.2.2",
